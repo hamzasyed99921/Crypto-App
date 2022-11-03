@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { data } from "./data/Data";
+
 const Main = () => {
+  const [state, setstate] = useState('');
+  console.log(state);
+  const navigate = useNavigate();
+  navigate('/overview', {state});
+
   return (
     <>
       <div className="main ">
-        <div className="container_fluid">
-          <div className=" d-flex flex-row justify-content-end ">
+        <div className="container_fluid" >
+          <div className=" d-flex flex-row justify-content-end " >
             <div className="dropdown ">
               <button
                 className="btn btn-secondary dropdown-toggle"
@@ -38,12 +45,12 @@ const Main = () => {
               </ul>
             </div>
           </div>
-          <div className="row">
+          <div className="row" style={{margin: '0px'}}>
             {data.map((user) => {
                 return(
-            <div className="col-md-4 col-12">
+            <div className="col-md-4 col-12" >
             <div className="details mt-3">
-            <div className="card" style={{ width: "19rem" }}>
+            <div className="card" onClick={() => (setstate(user))} style={{ width: "19rem", cursor: 'pointer' }}>
               <img
                 src={user.image}
                 className="card-img-top"

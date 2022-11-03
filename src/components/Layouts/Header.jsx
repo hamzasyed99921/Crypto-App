@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg "
+        className="navbar fixed-top navbar-expand-lg "
         style={{ zIndex: "1" }}
-        id="navbar_top"
+        
       >
         <div className="container-fluid">
           <Link className="navbar-brand " to="/">
@@ -43,7 +43,7 @@ const Header = () => {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="#"
+                  to="/"
                 >
                   Marketplace
                 </Link>

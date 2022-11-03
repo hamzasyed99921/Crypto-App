@@ -1,10 +1,33 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 5,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 5,
+  },
+};
+
 
 const Hero = () => {
   return (
     <>
-      <div className="hero_bg">
-        <div className="container-fluid">
+      <div className="hero_bg" >
+        <div className="container-fluid" >
           <div className="d-flex text-white justify-content-between mb-4 align-items-center">
             <div>
               <h2>Top Collections</h2>
@@ -13,9 +36,29 @@ const Hero = () => {
               <h3> See All</h3>
             </div>
           </div>
-          <div className="d-flex justify-content-between">
-            <div>
-              <div
+          <div className="carosole">
+                  <Carousel
+                    responsive={responsive}
+                    arrows
+                    autoPlay
+                    autoPlaySpeed={3000}
+                    centerMode={false}
+                    className=""
+                    containerClass="container-with-dots"
+                    dotListClass=""
+                    draggable
+                    focusOnSelect={false}
+                    infinite={true}
+                    itemClass=""
+                    keyBoardControl
+                    minimumTouchDrag={80}
+                    pauseOnHover
+                    renderArrowsWhenDisabled={false}
+                    renderButtonGroupOutside={false}
+                    renderDotsOutside={false}
+                    style={{borderRadius: '10px'}}
+                  >
+                    <div
                 className="card position-relative"
                 style={{ width: "14rem", height: "14rem" }}
               >
@@ -28,7 +71,7 @@ const Hero = () => {
                 </div>
                 <div className="card_txt d-flex justify-content-start align-items-center">
                   <img
-                    src="assets/images/po1.png"
+                    src="assets/images/po2.jpeg"
                     className="img-fluid img_1 mx-1"
                     alt=""
                   />
@@ -40,19 +83,12 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
-
-            <div>
               <div
                 className="card position-relative"
                 style={{ width: "14rem", height: "14rem" }}
               >
                 <div className="card-body">
-                  <img
-                    src="assets/images/caro2.jpeg"
-                    alt="img"
-                    className="img-fluid"
-                  />
+                  <img src="assets/images/caro2.jpeg"alt="img"className="img-fluid"/>
                 </div>
                 <div className="card_txt d-flex justify-content-start align-items-center">
                   <img
@@ -68,8 +104,6 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
-            <div>
               <div
                 className="card position-relative"
                 style={{ width: "14rem", height: "14rem" }}
@@ -83,7 +117,7 @@ const Hero = () => {
                 </div>
                 <div className="card_txt d-flex justify-content-start align-items-center">
                   <img
-                    src="assets/images/po1.png"
+                    src="assets/images/po3.png"
                     className="img-fluid img_1 mx-1"
                     alt=""
                   />
@@ -95,8 +129,6 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
-            <div>
               <div
                 className="card position-relative"
                 style={{ width: "14rem", height: "14rem" }}
@@ -110,7 +142,7 @@ const Hero = () => {
                 </div>
                 <div className="card_txt d-flex justify-content-start align-items-center">
                   <img
-                    src="assets/images/po1.png"
+                    src="assets/images/po4.png"
                     className="img-fluid img_1 mx-1"
                     alt=""
                   />
@@ -122,8 +154,6 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
-            <div>
               <div
                 className="card position-relative"
                 style={{ width: "14rem", height: "14rem" }}
@@ -137,7 +167,7 @@ const Hero = () => {
                 </div>
                 <div className="card_txt d-flex justify-content-start align-items-center">
                   <img
-                    src="assets/images/po1.png"
+                    src="assets/images/po5.jpeg"
                     className="img-fluid img_1 mx-1"
                     alt=""
                   />
@@ -149,9 +179,10 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="explore">
+                  </Carousel>
+                </div>
+          
+          <div className="explore css-1juzciw" id="myHeader">
             <h2>Explore</h2>
           </div>
         </div>
