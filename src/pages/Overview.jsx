@@ -9,7 +9,7 @@ import { RiShareBoxLine } from "react-icons/ri";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const Overview = () => {
+const Overview = () => {  
     const navigate = useNavigate();
   const { state } = useLocation();
   const { image, imgRandom, crypto, title, sale, from, to, btn } = state;
@@ -108,7 +108,7 @@ const Overview = () => {
                 <div className="d-flex edition justify-content-between mt-5 align-items-center">
                   <p className="">Edition #981</p>
                   <a href="#" className="">
-                    Select Edition{" "}
+                    Select Edition
                   </a>
                 </div>
               </div>

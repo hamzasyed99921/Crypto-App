@@ -4,7 +4,7 @@ import { data } from "./data/Data";
 
 const Main = () => {
   const [state, setstate] = useState('');
-  console.log(state);
+  // console.log(state);
   const navigate = useNavigate();
   navigate('/overview', {state});
 
@@ -12,7 +12,8 @@ const Main = () => {
     <>
       <div className="main ">
         <div className="container_fluid" >
-          <div className=" d-flex flex-row justify-content-end " >
+          <div className=" d-flex flex-row justify-content-end css-1131l6h" >
+            <div className="">
             <div className="dropdown ">
               <button
                 className="btn btn-secondary dropdown-toggle"
@@ -29,28 +30,39 @@ const Main = () => {
               >
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
+                    Most Relevant
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Another action
+                    Recently Listed 
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    Newest
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Price: Low to High
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Price: High to Low
                   </a>
                 </li>
               </ul>
             </div>
+            </div>
           </div>
-          <div className="row" style={{margin: '0px'}}>
+          <div className="row mb-3" style={{margin: '0px'}}>
             {data.map((user) => {
                 return(
-            <div className="col-md-4 col-12" >
+            <div className="col-lg-3 col-md-6  col-12" >
             <div className="details mt-3">
-            <div className="card" onClick={() => (setstate(user))} style={{ width: "19rem", cursor: 'pointer' }}>
+            <div className="card" onClick={() => (setstate(user))} style={{  cursor: 'pointer' }}>
               <img
                 src={user.image}
                 className="card-img-top"

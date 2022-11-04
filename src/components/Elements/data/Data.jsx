@@ -73,7 +73,7 @@ export const data = [
     image: "assets/images/card8.gif",
     imgRandom: "assets/images/round8.png",
     crypto: "Cronos World Tour",
-    title: "Cronos World Tour at Token",
+    title: "Cronos World Tour",
     sale: "1 minted",
     from: "Starting Bid",
     to: "$11",

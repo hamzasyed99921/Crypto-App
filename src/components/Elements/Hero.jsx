@@ -14,11 +14,11 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 5,
+    items: 3,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 5,
+    items: 1,
   },
 };
 
@@ -182,10 +182,12 @@ const Hero = () => {
                   </Carousel>
                 </div>
           
-          <div className="explore css-1juzciw" id="myHeader">
+        </div>
+          <div className="container-fluid css-1juzciw">
+          <div className="explore " >
             <h2>Explore</h2>
           </div>
-        </div>
+          </div>
       </div>
     </>
   );
