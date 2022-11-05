@@ -3,10 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { data } from "./data/Data";
 
 const Main = () => {
-  const [state, setstate] = useState('');
-  // console.log(state);
+ 
+
   const navigate = useNavigate();
-  navigate('/overview', {state});
+  const component = (user) =>
+  {
+    navigate("/overview", {state:user});
+  }
 
   return (
     <>
@@ -14,6 +17,7 @@ const Main = () => {
         <div className="container_fluid" >
           <div className=" d-flex flex-row justify-content-end css-1131l6h" >
             <div className="">
+              
             <div className="dropdown ">
               <button
                 className="btn btn-secondary dropdown-toggle"
@@ -62,7 +66,10 @@ const Main = () => {
                 return(
             <div className="col-lg-3 col-md-6  col-12" >
             <div className="details mt-3">
-            <div className="card" onClick={() => (setstate(user))} style={{  cursor: 'pointer' }}>
+            <div className="card" onClick={()=>
+                    {
+                        component(user)
+                    }} style={{  cursor: 'pointer' }}>
               <img
                 src={user.image}
                 className="card-img-top"

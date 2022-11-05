@@ -49,32 +49,32 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/community">
+                <Link className="nav-link" to="#">
                   Drops
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="#">
                   Brands
                 </Link>
               </li>
               <li className="nav-item ">
-                <Link className="nav-link creat" to="/blog">
+                <Link className="nav-link creat" to="#">
                   Create
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link sign_in" to="/build">
+                <Link className="nav-link sign_in" to="#">
                   Sign in
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to="/contact">
+                <Link className="nav-link " to="#">
                   SignUp
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link sign_up" to="/contact">
+                <Link className="nav-link sign_up" to="#">
                   English
                 </Link>
               </li>
