@@ -57,6 +57,39 @@
     }
   }
 }
+.navbar .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none !important;
+    position: relative;
+    border-bottom: 2px solid #fff;
+    transition: all 300ms linear;
+  }
+  .navbar .navbar-toggler-icon:after,
+  .navbar-toggler-icon:before {
+    width: 24px;
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 2;
+    transition: all 300ms linear;
+  }
+  .navbar .navbar-toggler-icon:after {
+    top: 8px;
+  }
+  
+  .navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg) !important;
+  }
+  .navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg) !important;
+  }
+  .navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent !important;
+  }
 
 // Hero section start
 .hero_bg {
@@ -508,3 +541,41 @@ a[data-toggle="collapse"] {
   }
 }
 //////////////////////////////////////////////// Overview page end//////////////////////////////////////////////////
+
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
+    .overview{
+        .container-fluid{
+            padding: 10px !important;
+            .round_img {
+                width: 84%;
+            }
+            .title_name {
+                font-size: 16px;
+            }
+            .text {
+                font-size: 10px;
+                font-weight: bold;
+            }
+            .buton{
+                button {
+              
+                    padding: 8px;
+                    font-size: 12px;
+                }
+            } 
+            .flex_img{
+                width: 16% !important;
+            }
+            .icons{
+                width: 60% !important;
+            }
+        }
+    }
+}

@@ -126,7 +126,7 @@ const Overview = () => {
               className="BuyEditionContainer_baseContainer__8fyxA"
             >
               <div className="d-flex BuyEditionContainer_assetContainer__8woNY css-33gphr">
-                    <img src={image} className='img-fluid ' style={{width: '10%'}} alt="" />
+                    <img src={image} className='img-fluid flex_img' style={{width: '10%'}} alt="" />
                 <div className="ms-3 BuyEditionContainer_assetInformation__W965G css-1rt1idp">
                   <div className="text">Edition 981 of 5000</div>
                   <div className="BuyEditionContainer_assetName__wM9jU css-10a3ax5">
