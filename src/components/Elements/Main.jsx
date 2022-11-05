@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import { useNavigate } from "react-router-dom";
+import {Link , useNavigate } from "react-router-dom";
 import { data } from "./data/Data";
+import Sidebar from './Sidebar'
 
 const Main = () => {
  
@@ -15,9 +16,27 @@ const Main = () => {
     <>
       <div className="main ">
         <div className="container_fluid" >
-          <div className=" d-flex flex-row justify-content-end css-1131l6h" >
-            <div className="">
-              
+          <div className=" d-flex flex-row justify-content-end align-items-center css-1131l6h" >
+            {/* <div className="">
+            <button
+            className="navbar-toggler"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+            // style={{color: '#fff'}}
+          >
+            <span className="navbar-toggler-icon" style={{backgroundColor: '#36d33b' , width: '32px', borderRadius: '6px'}} />
+          </button>
+          <div className="offcanvas offcanvas-start " style={{backgroundColor: 'rgba(0,0,0,0.8)'}} tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+  <div className="offcanvas-header">
+    <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" />
+  </div>
+  <div className="offcanvas-body">
+    <Sidebar/>
+  </div>
+</div>
+            </div> */}
             <div className="dropdown ">
               <button
                 className="btn btn-secondary dropdown-toggle"
@@ -59,7 +78,7 @@ const Main = () => {
                 </li>
               </ul>
             </div>
-            </div>
+            
           </div>
           <div className="row mb-3" style={{margin: '0px'}}>
             {data.map((user) => {
