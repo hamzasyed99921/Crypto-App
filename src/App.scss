@@ -130,7 +130,11 @@ body{
       }
     }
     &:hover {
+<<<<<<< HEAD
         overflow: hidden;
+=======
+      overflow: hidden;
+>>>>>>> 5e8527ef8ecdebf34dbeaec6b616dfbb96dda164
       border: 2px solid #1199fa;
       border-radius: 10px !important;
     }
@@ -505,9 +509,15 @@ padding-bottom: 8px;
 
 
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
     .react-multiple-carousel__arrow {
         display: none !important;
     }
+=======
+  .react-multiple-carousel__arrow{
+  display: none !important;
+}
+>>>>>>> 5e8527ef8ecdebf34dbeaec6b616dfbb96dda164
     .sidebar{
         display: none;
     }
@@ -548,6 +558,7 @@ padding-bottom: 8px;
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1124px){
     .overview{
         .container-fluid{
@@ -645,3 +656,10 @@ padding-bottom: 8px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+=======
+.css-vubbuv{
+  color: #fff !important;
+}
+
+
+>>>>>>> 5e8527ef8ecdebf34dbeaec6b616dfbb96dda164
