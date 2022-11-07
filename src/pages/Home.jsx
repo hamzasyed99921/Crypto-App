@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/Elements/Hero'
-import Main from '../components/Elements/Main'
+import Main from '../components/Elements/Cards'
+import PersistentDrawerLeft from '../components/Elements/Sections'
 import Sidebar from '../components/Elements/Sidebar'
 
 const Home = () => {
@@ -8,8 +9,9 @@ const Home = () => {
     <>
       <Hero/>
       <div className='d-flex'>
-      <Sidebar/>
-      <Main/>
+      {/* <Sidebar/> */}
+      {/* <Main/> */}
+      <PersistentDrawerLeft/>
       </div>
     </>
   )

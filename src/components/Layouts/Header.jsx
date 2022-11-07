@@ -5,7 +5,6 @@ const Header = () => {
     <>
       <nav
         className="navbar fixed-top navbar-expand-lg "
-        style={{ zIndex: "1" }}
         
       >
         <div className="container-fluid">
