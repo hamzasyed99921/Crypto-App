@@ -546,6 +546,9 @@ a[data-toggle="collapse"] {
 
 
 @media screen and (max-width: 768px) {
+  .react-multiple-carousel__arrow{
+  display: none !important;
+}
     .sidebar{
         display: none;
     }
@@ -590,6 +593,4 @@ a[data-toggle="collapse"] {
   color: #fff !important;
 }
 
-.react-multiple-carousel__arrow{
-  display: none !important;
-}
+
