@@ -109,6 +109,7 @@
   .card {
     border: none;
     border-radius: 10px !important;
+    overflow: hidden;
     cursor: pointer;
     .card-body {
       padding: 0px;
@@ -126,6 +127,7 @@
       }
     }
     &:hover {
+      overflow: hidden;
       border: 2px solid #1199fa;
       border-radius: 10px !important;
     }
