@@ -120,9 +120,9 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <Sidebar/>
       </Drawer>
-      <Main open={open} className="stick">
+      <Main open={open} class="stick">
         <DrawerHeader />
-        <div className=" d-flex flex-row justify-content-between align-items-center css-1131l6h" >
+        <div class=" d-flex flex-row justify-content-between align-items-center css-1131l6h" >
         <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -132,9 +132,9 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-            <div className="dropdown ">
+            <div class="dropdown ">
               <button
-                className="btn btn-secondary dropdown-toggle"
+                class="btn btn-secondary dropdown-toggle"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
@@ -143,31 +143,31 @@ export default function PersistentDrawerLeft() {
                 Sort By
               </button>
               <ul
-                className="dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="dropdownMenuButton1"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#">
                     Most Relevant
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#">
                     Recently Listed 
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#">
                     Newest
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#">
                     Price: Low to High
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#">
                     Price: High to Low
                   </a>
                 </li>
